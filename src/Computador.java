@@ -18,7 +18,8 @@ public class Computador {
 
         System.out.println("Configuração de Hardware:");
         for (HardwareBasico h : hardware) {
-            System.out.println("- " + h.nome + " (" + h.capacidade + (h.nome.equals("Memoria RAM") ? " Gb" : " Mhz") + ")");
+            System.out.println("- " + h.nome + " (" + h.capacidade +
+                    (h.nome.equals("Memoria RAM") || h.nome.equals("HD") ? " Gb" : " Mhz") + ")");
         }
 
         System.out.println("Sistema Operacional: " + sistemaOperacional.nome + " (" + sistemaOperacional.tipo + " bits)");
